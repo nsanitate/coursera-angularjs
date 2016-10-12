@@ -27,7 +27,7 @@ function LunchCheckController($scope) {
 
   // check the number of dishes
   $scope.check = function() {
-    let count = countDishes();
+    var count = countDishes();
 
     if(count === 0) {       // if 0 than wait for input
       print(noInputMessage, errorColor);
